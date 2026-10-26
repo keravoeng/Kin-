@@ -12,7 +12,7 @@ api_key = st.sidebar.text_input("ใส่ Gemini API Key:", type="password")
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("gemini-3.8-flash")
     # โค้ด HTML/JavaScript สำหรับรับเสียงบน Android Chrome
     st.markdown("""
     <script>
